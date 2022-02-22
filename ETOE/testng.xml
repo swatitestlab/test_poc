@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+    <test name="Validate base Page">
+        <classes>
+            <class name="pageObject.HomePage">
+                <methods>
+                    <include name="basePageNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test">
+        <classes>
+            <class name="pageObject.ValidateTittle">
+                <methods>
+                    <include name="validateAppTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Validate Bar">
+        <classes>
+            <class name="pageObject.validateNavigationBar">
+                <methods>
+                    <include name="basePageValidation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
